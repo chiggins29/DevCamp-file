@@ -4,7 +4,8 @@ class Blog < ApplicationRecord
   friendly_id :title, use: :slugged
 
   #how to check for data validations in rails
-  validates_presence_of :title, :body
+  validates_presence_of :title, 
+  											:body
 
   belongs_to :topic 
 end
