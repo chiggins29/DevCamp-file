@@ -15,4 +15,8 @@ module ApplicationHelper
 			content_tag(:p, greeting, class: "source-greeting")
 	end
 end
+
+def copyright_generator
+		HigginsViewTool::Renderer.copyright 'Cody Higgins', 'Don\'t touch my code'
+	end
 end
