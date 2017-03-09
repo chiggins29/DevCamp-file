@@ -1,11 +1,11 @@
 module ApplicationHelper
 	def login_helper
-		if current_user.is_a?(User) 
-      (link_to 'Edit User', edit_user_registration_path) + " " +
-      (link_to 'Logout', destroy_user_session_path, method: :delete) 
-    else 
+		if current_user.is_a?(GuestUser) 
       (link_to 'Login', user_session_path) + " " +
       (link_to 'Register', new_user_registration_path) 
+    else 
+      (link_to 'Edit_User', edit_user_registration_path) + " " +
+      (link_to 'Logout', destroy_user_session_path, method: :delete) 
     end	
 	end
 
@@ -20,3 +20,4 @@ def copyright_generator
 		HigginsViewTool::Renderer.copyright 'Cody Higgins', 'Don\'t touch my code'
 	end
 end
+
