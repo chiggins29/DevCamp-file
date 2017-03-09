@@ -2,29 +2,38 @@
 <html>
   <head>
     <title><%= @page_title %></title>
-    <%= csrf_meta_tags %>
+      <%= csrf_meta_tags %>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="<%= @seo_keywords %>" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <div class="site-wrapper">
 
-      <%= render "shared/nav", location: 'top' %>
+      <div class="site-wrapper-inner">
 
-      <%= login_helper %>
-    
-      <%= yield %>
+        <div class="cover-container">
 
-      <%= source_helper("Application") %>
+          <%= render "shared/application_nav" %>
+
+          <%= login_helper %>
+      
+          <%= yield %>
+
+          <%= source_helper("Application") %>
 <hr>
-      <%= copyright_generator %>
+          <%= copyright_generator %>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 </html>
