@@ -36,6 +36,27 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
+.main-div {
+  background-color: #333;
+  height: 200px;
+  display: flex;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.my-div {
+  width: 100%;
+  margin: 5px;
+  padding-top: 50px;
+  font-family: Impact;
+}
+
+.my-div1 {
+  width: 100%;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
