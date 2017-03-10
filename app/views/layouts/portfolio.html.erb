@@ -15,10 +15,12 @@
       <p class="alert"><%= alert %></p>
 
       <%= render "shared/nav", location: 'top' %>
-    
-    <%= yield %>
 
-    <%= source_helper("Portfolio") %>
+      <%= login_helper %>
+    
+      <%= yield %>
+
+      <%= source_helper("Portfolio") %>
 
   </body>
 </html>
