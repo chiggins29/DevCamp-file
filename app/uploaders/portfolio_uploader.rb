@@ -1,6 +1,6 @@
 class PortfolioUploader < CarrierWave::Uploader::Base
 
-  storage :file
+  storage :aws
   
 
   def store_dir
