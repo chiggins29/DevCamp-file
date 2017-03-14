@@ -28,7 +28,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -164,7 +163,6 @@ body {
  */
 
  .main-div {
-  background-color: #333;
   height: 200px;
   display: flex;
   margin-bottom: 10px;
@@ -218,3 +216,68 @@ body {
 .contact_content {
   margin-top: 70px;
 }
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('bkimage') no-repeat;
+  background-size: cover;
+}
+
+#background1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('bkimage1') no-repeat;
+  background-size: cover;
+}
+
+#background2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('bkimage2') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
