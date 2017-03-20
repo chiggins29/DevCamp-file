@@ -5,7 +5,8 @@ class Blog < ApplicationRecord
 
   #how to check for data validations in rails
   validates_presence_of :title, 
-  											:body
+  											:body,
+  											:topic_id
 
   has_many :comments, dependent: :destroy
 
