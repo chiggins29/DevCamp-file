@@ -163,28 +163,9 @@ body {
  * Custom Styles
  */
 
- .main-div {
-  height: 200px;
-  display: flex;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.my-div {
-  width: 100%;
-  margin: 5px;
-  padding-top: 50px;
-  font-family: Impact;
-}
-
-.my-div1 {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.bkimg {
+/*.bkimg {
   background-image: url();
-}
+}*/
 
 .card-block {
   color: black;
@@ -260,12 +241,18 @@ body {
 
 .app-card-container > .card {
   padding: 40px;
+  background: none;
+  border: none;
 }
 
 .card-block {
   margin: 5px 0px 5px 0px;
+  background: none;
+  border: none;
 }
 
-
+.skill {
+  margin: 10px 0px 10px 0px;
+}
 
 

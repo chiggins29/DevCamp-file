@@ -1,3 +1,4 @@
+
 <div class="app-card-container">
 	<div class="card">
 		<h2>About Me</h2>
@@ -5,10 +6,26 @@
 		<hr>
 
 		
-
-		<div class="row">
-			<div class="col-md-4">
-			<%= image_tag "#", width: 300, alt: "profile image", class: "profile-img" %>
+	
+	<div class="row">
+		<div class="col-md-4">
+			<%= image_tag "aboutmeimg", width: 300, alt: "profile image", class: "profile-img" %>
+				<div class="skills">
+					<% @skills.each do |skill| %>
+						<div class="skill">
+							<h5><%= skill.title %></h5>
+							<div class="progress">
+								<div 
+									class="progress-bar progress-bar-striped bg-warning"
+								 	role="progessbar"
+								 	aria-valuenow="<%= skill.percent_utilized %>"
+								 	aria-valuemax="100"
+								 	style="width: <%= skill.percent_utilized %>%"
+								></div>
+							</div>
+						</div>	
+					<% end %>
+				</div>
 			</div>
 
 			<div class="col-md-8">
@@ -33,11 +50,11 @@
 			 			class="btn btn-primary"
 			 			type="button"
 			 			data-toggle="collapse"
-			 			data-target="#codingSkills"
+			 			data-target="#education"
 			 			aria-expanded="false"
-			 			aria-controller="codingSkills"
+			 			aria-controller="education"
 			 		>
-			 			Coding Skills
+			 			Education
 			 			</button>
 			 	</p>
 
@@ -51,29 +68,19 @@
 			 			</div>
 			 		</div>
 
-			 		<div class="collapse" id="codingSkills">
+			 		<div class="collapse" id="education">
 			 			<div class="card card-block">
-			 				HTML5
+			 				Pinedale High School
 			 			</div>
 			 			<div class="card card-block">
-			 				CSS3
+			 				Bottega Tech
 			 			</div>
-			 			<div class="card card-block">
-			 				Ruby
-			 			</div>
-			 			<div class="card card-block">
-			 				Rails
-			 			</div>
-			 			<div class="card card-block">
-			 				jQuery
-			 			</div>
-
-
 			 		</div>
 			 	</p>
 			</div>
 		</div>
 	</div>
 </div>
+
 
 	<!-- <div id="background1"></div> -->
