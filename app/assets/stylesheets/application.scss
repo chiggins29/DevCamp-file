@@ -253,9 +253,14 @@ body {
   color: rgba(0, 0, 0, 0.50);
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
 
-
-
+.app-card-container > .card {
+  padding: 40px;
+}
 
 
 
